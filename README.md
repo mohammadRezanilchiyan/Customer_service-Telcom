@@ -63,21 +63,19 @@ Overall, the confusion matrix is a crucial tool for understanding the strengths 
 
 
 
+## Log loss
+
+>> higer accuracy, logloss = 0
 
 
-Log loss
-
-higer accuracy, logos = 0
-
-
-Logarithmic Loss (log loss), also known as cross-entropy loss, is a commonly used loss function in machine learning, particularly in the context of classification tasks. It quantifies the difference between predicted class probabilities and actual class labels. Logloss is widely used in scenarios where probabilistic predictions are required or when dealing with multi-class classification. Here are some specific use cases of logloss in machine learning:
-	Binary Classification: In binary classification, where there are two classes (positive and negative), logloss measures the discrepancy between the predicted probability of the positive class and the actual binary label. It encourages models to produce well-calibrated probabilistic predictions.
-	Multiclass Classification: In multiclass classification, where there are more than two classes, logloss is used to assess the difference between the predicted probabilities of all classes and the actual class labels. It's a popular choice for multi-class problems because it handles the uncertainty of probabilistic predictions well.
-	Softmax Activation: Logloss is often used with the softmax activation function at the output layer of neural networks for multi-class classification. The softmax function converts raw scores (logits) into class probabilities, and logloss then penalizes the differences between predicted probabilities and true labels.
-	Model Training and Optimization: Logloss is commonly used as the objective function during the training of classification models. The goal is to minimize the logloss by adjusting the model parameters, which helps improve the alignment between predicted probabilities and actual class labels.
+Logarithmic Loss (log loss), also known as cross-entropy loss, is a commonly used loss function in machine learning, particularly in the context of classification tasks. It quantifies the difference between predicted class probabilities and actual class labels. Logloss is widely used in scenarios where probabilistic predictions are required or when dealing with multi-class classification. Here are some specific use cases of log loss in machine learning:
+	Binary Classification: In binary classification, where there are two classes (positive and negative), log loss measures the discrepancy between the predicted probability of the positive class and the actual binary label. It encourages models to produce well-calibrated probabilistic predictions.
+	Multiclass Classification: In multiclass classification, where there are more than two classes, log loss is used to assess the difference between the predicted probabilities of all classes and the actual class labels. It's a popular choice for multi-class problems because it handles the uncertainty of probabilistic predictions well.
+	Softmax Activation: Logloss is often used with the softmax activation function at the output layer of neural networks for multi-class classification. The softmax function converts raw scores (logits) into class probabilities, and log loss then penalizes the differences between predicted probabilities and true labels.
+	Model Training and Optimization: Logloss is commonly used as the objective function during the training of classification models. The goal is to minimize the log loss by adjusting the model parameters, which helps improve the alignment between predicted probabilities and actual class labels.
 	Evaluation of Probabilistic Predictions: Logloss provides a quantitative measure of how well a model's probabilistic predictions match the true labels. It's often used in model evaluation and comparison, especially when dealing with imbalanced datasets or when different classes have different levels of importance.
 	Ensemble Methods: Logloss can be used as a criterion for combining predictions from multiple models in ensemble methods like stacking or boosting. It guides the ensemble in assigning appropriate weights to individual models.
 	Early Stopping: During the training process, logloss can be monitored to implement early stopping, where training stops if the loss on a validation set starts to increase. This helps prevent overfitting.
 	Imbalanced Datasets: Logloss can help mitigate issues related to imbalanced datasets by penalizing models for making overly confident predictions on the majority class, leading to more balanced and accurate predictions.
 	Probabilistic Ranking: In scenarios where ranking is important, logloss can serve as a measure of how well the model's predicted probabilities rank the instances. This is relevant in recommendation systems and information retrieval tasks.
-Logarithmic loss plays a critical role in training and evaluating classification models that provide probabilistic predictions, making it an essential tool in many machine learning applications.
+Logarithmic loss plays a critical role in training and evaluating classification models that provide probabilistic predictions, making it an essential tool in many machine-learning applications.
